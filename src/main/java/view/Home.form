@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Home">
+  <grid id="27dc6" binding="pHome" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="986" height="500"/>
+    </constraints>
+    <properties>
+      <background color="-725769"/>
+      <doubleBuffered value="true"/>
+      <focusable value="true"/>
+      <maximumSize width="500" height="500"/>
+      <minimumSize width="500" height="500"/>
+      <preferredSize width="900" height="500"/>
+    </properties>
+    <border type="none" title-justification="2"/>
+    <children>
+      <component id="d9e98" class="javax.swing.JButton" binding="configuracionBtn">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="160" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4485170"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="24" style="1"/>
+          <foreground color="-12180646"/>
+          <text value="CONFIGURACION"/>
+        </properties>
+      </component>
+      <component id="24dff" class="javax.swing.JButton" binding="usuarioBtn">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="160" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4485170"/>
+          <enabled value="true"/>
+          <focusable value="false"/>
+          <font name="Courier New" size="24" style="1"/>
+          <foreground color="-12180646"/>
+          <hideActionText value="false"/>
+          <horizontalTextPosition value="0"/>
+          <text value="USUARIO"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="c1478" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Consolas" size="72" style="1"/>
+          <text value="HOME"/>
+        </properties>
+      </component>
+      <component id="21df8" class="javax.swing.JButton" binding="finazasBtn">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="160" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4485170"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="24" style="1"/>
+          <foreground color="-12180646"/>
+          <selected value="true"/>
+          <text value="FINANZAS"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="Since15" id="24dff"/>
+  </inspectionSuppressions>
+</form>

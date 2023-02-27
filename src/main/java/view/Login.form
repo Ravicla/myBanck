@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Login">
+  <grid id="27dc6" binding="pLogin" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="58" y="60" width="668" height="500"/>
+    </constraints>
+    <properties>
+      <background color="-725769"/>
+      <doubleBuffered value="true"/>
+      <enabled value="true"/>
+      <font name="Courier New" size="20" style="1"/>
+      <foreground color="-10274444"/>
+      <maximumSize width="500" height="500"/>
+      <minimumSize width="500" height="500"/>
+      <preferredSize width="500" height="350"/>
+    </properties>
+    <clientProperties>
+      <html.disable class="java.lang.Boolean" value="false"/>
+    </clientProperties>
+    <border type="empty" title="" title-justification="2" title-position="5">
+      <size top="50" left="50" bottom="50" right="50"/>
+    </border>
+    <children>
+      <component id="c91d1" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <doubleBuffered value="false"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusTraversalPolicyProvider value="false"/>
+          <font name="Georgia" size="22" style="1"/>
+          <horizontalAlignment value="0"/>
+          <inheritsPopupMenu value="true"/>
+          <preferredSize width="500" height="40"/>
+          <text value="BIENVENIDO AL BANCO"/>
+        </properties>
+      </component>
+      <component id="6e7ef" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <font name="Courier New" size="20" style="1"/>
+          <minimumSize width="96" height="23"/>
+          <preferredSize width="84" height="23"/>
+          <text value="USUARIO"/>
+        </properties>
+      </component>
+      <component id="3705c" class="javax.swing.JTextField" binding="usuarioText">
+        <constraints/>
+        <properties>
+          <background color="-2638366"/>
+          <columns value="40"/>
+          <dragEnabled value="true"/>
+          <preferredSize width="406" height="40"/>
+          <text value="1312716747"/>
+        </properties>
+      </component>
+      <component id="c39b4" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <font name="Courier New" size="20" style="1"/>
+          <preferredSize width="96" height="23"/>
+          <text value="PASSWORD"/>
+        </properties>
+      </component>
+      <component id="29674" class="javax.swing.JTextField" binding="passwordText">
+        <constraints/>
+        <properties>
+          <background color="-2638366"/>
+          <columns value="40"/>
+          <preferredSize width="406" height="40"/>
+          <text value="1312716747"/>
+        </properties>
+      </component>
+      <component id="94c22" class="javax.swing.JButton" binding="loginBtn">
+        <constraints/>
+        <properties>
+          <alignmentX value="1.0"/>
+          <autoscrolls value="false"/>
+          <background color="-4485170"/>
+          <borderPainted value="true"/>
+          <contentAreaFilled value="true"/>
+          <defaultCapable value="true"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusTraversalPolicyProvider value="false"/>
+          <font name="Courier New" size="24" style="1"/>
+          <foreground color="-12180646"/>
+          <selected value="true"/>
+          <text value="LOGIN"/>
+        </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+    </children>
+  </grid>
+</form>

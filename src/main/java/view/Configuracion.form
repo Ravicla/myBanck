@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Configuracion">
+  <grid id="27dc6" binding="pConfiguracion" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="88" width="500" height="332"/>
+    </constraints>
+    <properties/>
+    <border type="none" title=""/>
+    <children>
+      <component id="66f52" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="CONFIGURACION"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
