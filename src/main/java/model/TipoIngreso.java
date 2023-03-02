@@ -3,8 +3,18 @@ package model;
 public class TipoIngreso {
     int tipoIngreso_id;
     String descripcion;
+    Usuario usuario;
 
-    public TipoIngreso(String descripcion) {
+ public TipoIngreso(){
+
+ }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
@@ -16,11 +26,14 @@ public class TipoIngreso {
         this.tipoIngreso_id = tipoIngreso_id;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
+
+
 }

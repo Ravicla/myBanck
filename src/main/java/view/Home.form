@@ -11,7 +11,7 @@
       <focusable value="true"/>
       <maximumSize width="500" height="500"/>
       <minimumSize width="500" height="500"/>
-      <preferredSize width="900" height="500"/>
+      <preferredSize width="900" height="900"/>
     </properties>
     <border type="none" title-justification="2"/>
     <children>

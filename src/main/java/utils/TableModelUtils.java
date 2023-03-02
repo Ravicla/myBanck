@@ -17,8 +17,6 @@ public class TableModelUtils {
             // Get the column names
             for (int column = 0; column < numberOfColumns; column++) {
                 columnNames.addElement(metaData.getColumnLabel(column + 1));
-
-
             }
             // Get all rows.
             Vector rows = new Vector();

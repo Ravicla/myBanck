@@ -22,11 +22,13 @@ public class Usuario extends JFrame {
     private JButton btnEditar;
     private JButton btnEliminar;
     private JButton btnLimpiar;
+    private JButton btnSalir;
 
     UsuarioBusiness usuarioBusiness = new UsuarioBusiness();
 
     public Usuario() {
         cargarListaUsuarios();
+
         ingresarBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -97,7 +99,6 @@ public class Usuario extends JFrame {
                 usuario.setCorreo(correoText.getText());
                 usuario.setTelefono(telefonoText.getText());
                 usuario.setEstatus(estatusText.getText());
-                //usuario.setPassword(passwordText.getText());
                 try {
                     boolean usuarioDelete = usuarioBusiness.delete(usuario);
                     if (usuarioDelete) {
@@ -134,9 +135,6 @@ public class Usuario extends JFrame {
 
 
 
-
-
-
         tableUsuarios.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -150,6 +148,14 @@ public class Usuario extends JFrame {
                 estatusText.setText(model.getValueAt(index,6).toString());
             }
         });
+
+        btnSalir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Home homeView = new Home();
+                homeView.setVisible(true);
+            }
+        });
     }
 
     public void setVisible(boolean b) {
@@ -161,8 +167,7 @@ public class Usuario extends JFrame {
         frame.setVisible(true);
     }
 
-    public void cargarListaUsuarios()
-    {
+    public void cargarListaUsuarios() {
         ResultSet resultUsuarios= usuarioBusiness.read();
         TableModel tableModel= TableModelUtils.resultSetToTableModel(resultUsuarios);
         tableUsuarios.setModel(tableModel);//SET CUSTOM RENDERER TO TEAMS COLUMN

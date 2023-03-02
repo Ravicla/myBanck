@@ -1,6 +1,7 @@
 package business;
 
 import configurations.Conexion;
+import model.TipoIngreso;
 import model.Usuario;
 import scripts.Scripts;
 import java.sql.*;
@@ -130,6 +131,51 @@ public class UsuarioBusiness {
         }
         return false;
     }
+
+
+
+    public ArrayList<Usuario> getUsuario() {
+        con = Conexion.conectar();
+        ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
+        try {
+            st = con.createStatement();
+            r = st.executeQuery("select * from usuario");
+            while(r.next()){
+                Usuario usuario = new Usuario();
+                usuario.setUsuario_id(r.getInt("usuario_id"));
+                usuario.setCi(r.getString("ci"));
+                usuario.setNombre(r.getString("nombre"));
+                usuario.setApellido(r.getString("apellido"));
+                usuario.setCorreo(r.getString("correo"));
+                usuario.setTelefono(r.getString("telefono"));
+                usuario.setEstatus(r.getString("estatus"));
+                usuario.setPassword(r.getString("password"));
+                listaUsuarios.add(usuario);
+            }
+        }catch (SQLException e){
+            System.out.println("No se pudo recuperar el usuario");
+        }
+        return listaUsuarios;
+    }
+
+   public ArrayList<TipoIngreso>getTipoIngreso(){
+        con = Conexion.conectar();
+        ArrayList<TipoIngreso>listaTipoIngreso = new ArrayList<TipoIngreso>();
+        try {
+            st = con.createStatement();
+            r = st.executeQuery("select * from tipoingreso");
+            while (r.next()){
+                TipoIngreso tipoIngreso = new TipoIngreso();
+                tipoIngreso.setTipoIngreso_id(r.getInt("tipoIngreso_id"));
+                tipoIngreso.setDescripcion(r.getString("descripcion"));
+                listaTipoIngreso.add(tipoIngreso);
+            }
+        } catch (SQLException e) {
+            System.out.println("no hay ese tipo");
+            //throw new RuntimeException(e);
+        }
+        return listaTipoIngreso;
+   }
 
 
 }
