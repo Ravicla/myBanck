@@ -54,7 +54,7 @@ public class UsuarioBusiness {
             ps.setString(7, usuario.getPassword());
             return ps.execute();
         } catch (SQLException e){
-            System.out.println("Error en insertar: "+ e.getMessage());
+            System.out.println("Error al crear nuevo usuario: "+ e.getMessage());
             return false;
         }
     }

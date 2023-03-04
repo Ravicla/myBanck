@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 public class Finanzas extends JFrame{
     private JPanel pFinanza;
-    private JButton prestamosButton;
+    private JButton pretsamoBtn;
     private JButton aportesButton;
     private JButton btnRegresar;
 
@@ -28,7 +28,17 @@ public class Finanzas extends JFrame{
                 homeView.setVisible(true);
             }
         });
+        pretsamoBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Prestamos prestamosView = new Prestamos();
+                prestamosView.setVisible(true);
+            }
+        });
     }
+
+
+
 
 
 

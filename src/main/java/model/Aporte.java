@@ -9,7 +9,7 @@ public class Aporte {
     double valor_aporte;
     int tipoIngreso;
     int usuario;
-    SimpleDateFormat format = new SimpleDateFormat("dd/mm/yyyy");
+
 
     public Aporte() {
         this.fecha_aporte = fecha_aporte;
@@ -24,9 +24,7 @@ public class Aporte {
         this.aporte_id = aporte_id;
     }
 
-    public Date getFecha_aporte(String DATE) {
-        return fecha_aporte;
-    }
+
     public Date getFecha_aporte() {
         return fecha_aporte;
     }

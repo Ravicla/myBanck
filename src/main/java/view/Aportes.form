@@ -16,26 +16,9 @@
           <grid row="1" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas" size="24" style="1"/>
           <text value="AHORROS BANQUITO"/>
         </properties>
-      </component>
-      <hspacer id="57145">
-        <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
-      <hspacer id="7428c">
-        <constraints>
-          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
-      <component id="f2a85" class="javax.swing.JTable" binding="table1" default-binding="true">
-        <constraints>
-          <grid row="10" column="1" row-span="1" col-span="7" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
-        </constraints>
-        <properties/>
       </component>
       <hspacer id="f55c5">
         <constraints>
@@ -60,6 +43,7 @@
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-2638366"/>
           <editable value="false"/>
           <enabled value="true"/>
           <focusable value="true"/>
@@ -87,15 +71,8 @@
           <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-2638366"/>
           <model/>
-        </properties>
-      </component>
-      <component id="a7181" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Fecha"/>
         </properties>
       </component>
       <component id="d43ff" class="javax.swing.JLabel">
@@ -112,7 +89,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-2638366"/>
+        </properties>
       </component>
       <component id="30d85" class="javax.swing.JLabel">
         <constraints>
@@ -135,6 +114,9 @@
           <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-4485170"/>
+          <font name="Courier New" size="22"/>
+          <foreground color="-12180646"/>
           <text value="Guardar"/>
         </properties>
       </component>
@@ -171,10 +153,100 @@
         <constraints>
           <grid row="7" column="2" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-2638366"/>
+        </properties>
         <border type="none"/>
         <children/>
       </grid>
+      <scrollpane id="b77b3">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="7" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2638366"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f2a85" class="javax.swing.JTable" binding="tableAporte">
+            <constraints/>
+            <properties>
+              <background color="-2638366"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="3e419" class="javax.swing.JButton" binding="borrarButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4485170"/>
+          <font name="Courier New" size="22"/>
+          <foreground color="-12180646"/>
+          <text value="Borrar"/>
+        </properties>
+      </component>
+      <component id="d82ce" class="javax.swing.JButton" binding="limpiarButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4485170"/>
+          <font name="Courier New" size="22"/>
+          <foreground color="-12180646"/>
+          <text value="Limpiar"/>
+        </properties>
+      </component>
+      <component id="180a4" class="javax.swing.JButton" binding="editarButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4485170"/>
+          <font name="Courier New" size="22"/>
+          <foreground color="-12180646"/>
+          <text value="Editar"/>
+        </properties>
+      </component>
+      <component id="9e973" class="javax.swing.JTextField" binding="codigoText">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2638366"/>
+          <editable value="false"/>
+          <foreground color="-12510911"/>
+        </properties>
+      </component>
+      <component id="d1e9e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="CODIGO"/>
+        </properties>
+      </component>
+      <hspacer id="57145">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="7428c">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="a7181" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Fecha"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
