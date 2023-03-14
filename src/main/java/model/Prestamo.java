@@ -9,13 +9,15 @@ public class Prestamo {
     int interes;
     double valor_prestamo;
     int tiempo_prestamo;
-    Usuario usuario;
+    int usuario;
 
-    public Prestamo(Date fecha_prestamo, double valor_prestamo, Usuario usuario) {
+    public Prestamo() {
         this.fecha_prestamo = fecha_prestamo;
         this.valor_prestamo = valor_prestamo;
-        this.usuario = usuario;
+
     }
+
+
 
     public int getPrestamo_id() {
         return prestamo_id;
@@ -57,11 +59,11 @@ public class Prestamo {
         this.tiempo_prestamo = tiempo_prestamo;
     }
 
-    public Usuario getUsuario() {
+    public int getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(int usuario) {
         this.usuario = usuario;
     }
 }

@@ -132,8 +132,6 @@ public class UsuarioBusiness {
         return false;
     }
 
-
-
     public ArrayList<Usuario> getUsuario() {
         con = Conexion.conectar();
         ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
@@ -152,13 +150,13 @@ public class UsuarioBusiness {
                 usuario.setPassword(r.getString("password"));
                 listaUsuarios.add(usuario);
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println("No se pudo recuperar el usuario");
         }
         return listaUsuarios;
     }
 
-   public ArrayList<TipoIngreso>getTipoIngreso(){
+    public ArrayList<TipoIngreso>getTipoIngreso(){
         con = Conexion.conectar();
         ArrayList<TipoIngreso>listaTipoIngreso = new ArrayList<TipoIngreso>();
         try {

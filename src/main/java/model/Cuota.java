@@ -1,23 +1,22 @@
 package model;
 
-import java.util.Date;
-
 public class Cuota {
     int cuota_id;
-    Date fecha_cuota;
+    String fecha_cuota;
     double valor_capital;
     boolean pago_capital;
     double valor_interes;
     boolean pago_interes;
     double abono_capital;
     double abono_interes;
-    Prestamo prestamo;
+    int prestamo;
 
-    public Cuota(Date fecha_cuota, double valor_capital, double valor_interes, Prestamo prestamo) {
-        this.fecha_cuota = fecha_cuota;
+    public Cuota(double valor_capital, double valor_interes) {
         this.valor_capital = valor_capital;
         this.valor_interes = valor_interes;
-        this.prestamo = prestamo;
+    }
+    public Cuota(){
+
     }
 
     public int getCuota_id() {
@@ -28,11 +27,11 @@ public class Cuota {
         this.cuota_id = cuota_id;
     }
 
-    public Date getFecha_cuota() {
+    public String getFecha_cuota() {
         return fecha_cuota;
     }
 
-    public void setFecha_cuota(Date fecha_cuota) {
+    public void setFecha_cuota(String fecha_cuota) {
         this.fecha_cuota = fecha_cuota;
     }
 
@@ -84,11 +83,16 @@ public class Cuota {
         this.abono_interes = abono_interes;
     }
 
-    public Prestamo getPrestamo() {
+    public int getPrestamo() {
         return prestamo;
     }
 
-    public void setPrestamo(Prestamo prestamo) {
+    public void setPrestamo(int prestamo) {
         this.prestamo = prestamo;
     }
+
 }
+
+
+
+

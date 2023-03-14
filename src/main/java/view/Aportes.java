@@ -105,7 +105,6 @@ public class Aportes  extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 model.Aporte aporte = new Aporte();
-
                 aporte.setAporte_id(Integer.parseInt(codigoText.getText()));
                 try {
                     boolean usuarioDelete = aporteBusiness.delete(aporte);
@@ -118,12 +117,9 @@ public class Aportes  extends JFrame {
                                 "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
                     }
                     cargarListaAportes();
-
                 } catch (SQLException ex) {
                     throw new RuntimeException(ex);
                 }
-
-
             }
         });
 
@@ -133,12 +129,8 @@ public class Aportes  extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 valorText.setText("");
                 codigoText.setText("");
-
             }
         });
-
-
-
 
         pAporte.addComponentListener(new ComponentAdapter() {
         });
@@ -184,11 +176,9 @@ public class Aportes  extends JFrame {
         frame.setVisible(true);
     }
 
-
-
     public void cargarListaAportes() {
-        ResultSet resultAportes= aporteBusiness.read();
-        TableModel tableModel= TableModelUtils.resultSetToTableModel(resultAportes);
+        ResultSet resultAportes = aporteBusiness.read();
+        TableModel tableModel = TableModelUtils.resultSetToTableModel(resultAportes);
         tableAporte.setModel(tableModel);//SET CUSTOM RENDERER TO TEAMS COLUMN
     }
 }

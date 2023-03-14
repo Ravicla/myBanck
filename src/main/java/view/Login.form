@@ -50,6 +50,7 @@
           <background color="-2638366"/>
           <columns value="40"/>
           <dragEnabled value="true"/>
+          <horizontalAlignment value="0"/>
           <preferredSize width="406" height="40"/>
           <text value="1312716747"/>
         </properties>
@@ -67,6 +68,7 @@
         <properties>
           <background color="-2638366"/>
           <columns value="40"/>
+          <horizontalAlignment value="0"/>
           <preferredSize width="406" height="40"/>
           <text value="1312716747"/>
         </properties>

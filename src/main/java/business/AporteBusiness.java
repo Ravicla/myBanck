@@ -46,8 +46,6 @@ public class AporteBusiness {
         }
     }
 
-
-
     public boolean delete(Aporte aporte) throws SQLException {
         con = Conexion.conectar();
         try {
@@ -65,7 +63,7 @@ public class AporteBusiness {
     public boolean update(Aporte aporte) throws SQLException {
         con = Conexion.conectar();
         try {
-            SimpleDateFormat forma=new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat forma = new SimpleDateFormat("yyyy-MM-dd");
             String fecha=forma.format(aporte.getFecha_aporte());
 
             String query = Scripts.APORTE_UPDATE;

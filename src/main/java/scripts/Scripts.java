@@ -27,7 +27,7 @@ public class Scripts {
             "FROM usuario as u INNER JOIN prestamo as p ON u.usuario_id = p.usuario_id\n" +
             "INNER JOIN cuota as c ON p.prestamo_id = c.prestamo_id";
     public static final String PRESTAMO_UPDATE = "update prestamo set fecha_prestamo = ?, interes = ?, valor_prestamo = ?, tiempo_prestamo = ? where usuario_id = ?";
-    public static final String CUOTA_UPDATE = "update cuota set fecha_cuota = ?, valor_capital = ?, pago_capital = ?, valor_interes = ?, pago_interes = ?, abono_capital = ?, abono_interes= ? where prestamo_id = ?;";
+    public static final String CUOTA_UPDATE = "update cuota set fecha_cuota = ?, valor_capital = ?, pago_capital = ?, valor_interes = ?, pago_interes = ?, abono_capital = ?, abono_interes= ? where prestamo_id = ?";
 
     public static final String PRESTAMO_DELETE = "delete from prestamo where prestamo_id = ?";
     public static final String CUOTA_DELETE = "delete from cuota where cuota_id = ?";

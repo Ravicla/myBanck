@@ -138,7 +138,7 @@ public class Usuario extends JFrame {
         tableUsuarios.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                int index=tableUsuarios.getSelectedRow();
+                int index = tableUsuarios.getSelectedRow();
                 TableModel model = tableUsuarios.getModel();
                 ciText.setText(model.getValueAt(index,1).toString());
                 nombreText.setText(model.getValueAt(index,2).toString());

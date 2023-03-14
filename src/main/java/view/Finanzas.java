@@ -6,9 +6,10 @@ import java.awt.event.ActionListener;
 
 public class Finanzas extends JFrame{
     private JPanel pFinanza;
-    private JButton pretsamoBtn;
+    private JButton prestamoBtn;
     private JButton aportesButton;
     private JButton btnRegresar;
+    private JButton reportePrestamosBtn;
 
 
     public Finanzas() {
@@ -28,11 +29,18 @@ public class Finanzas extends JFrame{
                 homeView.setVisible(true);
             }
         });
-        pretsamoBtn.addActionListener(new ActionListener() {
+        prestamoBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Prestamos prestamosView = new Prestamos();
                 prestamosView.setVisible(true);
+            }
+        });
+        reportePrestamosBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ConsultaPrestamo consultaPrestamoView = new ConsultaPrestamo();
+                consultaPrestamoView.setVisible(true);
             }
         });
     }
